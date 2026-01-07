@@ -29,21 +29,21 @@ import { LuBath } from "react-icons/lu";
 import { TbAirConditioning, TbFridge } from "react-icons/tb";
 
 //Room images
-import deluxeRoomImage from "../../assets/room-images/deluxe/deluxe.jpg";
-import deluxeRoomImage2 from "../../assets/room-images/deluxe/deluxe-2.jpg";
-import deluxeRoomImage3 from "../../assets/room-images/deluxe/deluxe-3.jpg";
-import deluxeRoomImage4 from "../../assets/room-images/deluxe/deluxe-4.jpg";
+import budgetRoomImage from "../../assets/room-images/deluxe/deluxe.jpg";
+import budgetRoomImage2 from "../../assets/room-images/deluxe/deluxe-2.jpg";
+import budgetRoomImage3 from "../../assets/room-images/deluxe/deluxe-3.jpg";
+import budgetRoomImage4 from "../../assets/room-images/deluxe/deluxe-4.jpg";
 import diplomaticRoomImage from "../../assets/room-images/diplomatic/diplomatic.jpg";
 import diplomaticRoomImage2 from "../../assets/room-images/diplomatic/diplomatic-2.jpg";
 import diplomaticRoomImage3 from "../../assets/room-images/diplomatic/diplomatic-3.jpg";
 import diplomaticRoomImage4 from "../../assets/room-images/diplomatic/diplomatic-4.jpg";
 
-//deluxe room images
-const deluxeRoomImages = [
-  deluxeRoomImage,
-  deluxeRoomImage2,
-  deluxeRoomImage3,
-  deluxeRoomImage4,
+//budget room images
+const budgetRoomImages = [
+  budgetRoomImage,
+  budgetRoomImage2,
+  budgetRoomImage3,
+  budgetRoomImage4,
 ];
 
 // diplomatic room images
@@ -56,13 +56,13 @@ const diplomaticRoomImages = [
 
 // Room type to image mapping
 const roomTypeImages = {
-  Deluxe: deluxeRoomImage,
+  Budget: budgetRoomImage,
   Diplomatic: diplomaticRoomImage,
 };
 
 // Room type to gallery images mapping
 const roomGalleryImages = {
-  Deluxe: deluxeRoomImages,
+  Budget: budgetRoomImages,
   Diplomatic: diplomaticRoomImages,
 };
 
@@ -133,6 +133,7 @@ export default function AvailableRoomsSection() {
     setNumberOfRooms,
     setRoomType,
     updateTotalPayment,
+    branchId,
   } = useSharedContext();
 
   const fetchRoomData = useCallback(async () => {
@@ -142,7 +143,7 @@ export default function AvailableRoomsSection() {
         ? API_BASE_URL.slice(0, -1)
         : API_BASE_URL;
       const response = await axios.post(`${baseUrl}/api/rooms/details`, {
-        branch_id: 1,
+        branch_id: branchId,
       });
 
       console.log("API Response:", response.data);
@@ -165,7 +166,7 @@ export default function AvailableRoomsSection() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [branchId]);
 
   useEffect(() => {
     fetchRoomData();

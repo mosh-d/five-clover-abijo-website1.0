@@ -84,10 +84,10 @@ export default function Footer() {
             >
               <RiPhoneLine size="3rem" />
               <a
-                href="tel:+2349075105702"
+                href="tel:+2349159477805"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                +234 907 510 5702
+                +234 915 947 7805
               </a>
             </div>
             <div
@@ -96,12 +96,12 @@ export default function Footer() {
             >
               <RiWhatsappLine size="3rem" />
               <a
-                href="https://wa.me/2349075105702"
+                href="https://wa.me/2349159477805"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                +234 907 510 5702
+                +234 915 947 7805
               </a>
             </div>
             <div
@@ -110,10 +110,10 @@ export default function Footer() {
             >
               <RiMailLine size="3rem" />
               <a
-                href="mailto:info@fivecloverhotelmonastery.com"
+                href="mailto:info@fivecloverhotelabijo.com"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                info@fivecloverhotelmonastery.com
+                info@fivecloverhotelabijo.com
               </a>
             </div>
           </div>
@@ -196,7 +196,7 @@ export default function Footer() {
                   target="_blank"
                   className="text-2xl"
                 >
-                  Monastry Road
+                  Monastery Road
                 </a>
                 <a
                   href="https://fivecloverhotelabijo.com/"

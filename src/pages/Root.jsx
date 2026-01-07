@@ -6,7 +6,7 @@ import MainNavBar from "../components/shared/MainNavBar";
 import axios from "axios";
 import { generateHotelSchema } from "../utils/seoUtils";
 import SEO from "../components/seo/SEO";
-import SafeHelmet from '../components/seo/SafeHelmet';
+import SafeHelmet from "../components/seo/SafeHelmet";
 
 const API_BASE_URL = "https://five-clover-shared-backend.onrender.com";
 
@@ -29,7 +29,7 @@ export default function RootLayout() {
   const [roomTypeId, setRoomTypeId] = useState(null);
   const [totalPayment, setTotalPayment] = useState(0);
   const [roomPrices, setRoomPrices] = useState({});
-  const [branchId] = useState(1); // Monastery Road branch ID
+  const [branchId] = useState(2); // Abijo branch ID
   const [roomTypes, setRoomTypes] = useState([]);
   const [isLoadingRooms, setIsLoadingRooms] = useState(true);
 
@@ -197,11 +197,11 @@ export default function RootLayout() {
 
   // Get current page metadata
   const getPageMetadata = () => {
-    const baseUrl = "https://fiveclovermonastery.fivecloverhotels.com";
+    const baseUrl = "https://fivecloverabijo.fivecloverhotels.com";
     const defaultMetadata = {
-      title: "Five Clover Hotel Monastery Road | Luxury Accommodation in Lagos",
+      title: "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
       description:
-        "Experience luxury and comfort at Five Clover Hotel Monastery Road. Book your stay at our premium hotel at Monastery Road, Sangotedo, Lagos, Nigeria.",
+        "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/five clover logo.webp",
@@ -209,34 +209,34 @@ export default function RootLayout() {
 
     const pageMetadata = {
       "/": {
-        title: "Five Clover Hotel Monastery Road | Luxury Accommodation in Lagos",
+        title: "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
         description:
-          "Experience luxury and comfort at Five Clover Hotel Monastery Road. Book your stay at our premium hotel at Monastery Road, Sangotedo, Lagos, Nigeria.",
+          "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
       },
       "/about": {
-        title: "About Us | Five Clover Hotel Monastery Road",
+        title: "About Us | Five Clover Hotel Abijo",
         description:
-          "Discover the story behind Five Clover Hotel Monastery Road and our commitment to providing exceptional hospitality in Lagos.",
+          "Discover the story behind Five Clover Hotel Abijo and our commitment to providing exceptional hospitality in Lagos.",
       },
       "/rooms": {
-        title: "Our Rooms | Five Clover Hotel Monastery Road",
+        title: "Our Rooms | Five Clover Hotel Abijo",
         description:
-          "Explore our luxurious rooms and suites at Five Clover Hotel Monastery Road, designed for your comfort and relaxation.",
+          "Explore our luxurious rooms and suites at Five Clover Hotel Abijo, designed for your comfort and relaxation.",
       },
       "/gallery": {
-        title: "Photo Gallery | Five Clover Hotel Monastery Road",
+        title: "Photo Gallery | Five Clover Hotel Abijo",
         description:
-          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Five Clover Hotel Monastery Road.",
+          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Five Clover Hotel Abijo.",
       },
       "/contact": {
-        title: "Contact Us | Five Clover Hotel Monastery Road",
+        title: "Contact Us | Five Clover Hotel Abijo",
         description:
-          "Get in touch with Five Clover Hotel Monastery Road. Our friendly staff is ready to assist with your booking and inquiries.",
+          "Get in touch with Five Clover Hotel Abijo. Our friendly staff is ready to assist with your booking and inquiries.",
       },
       "/booking": {
-        title: "Book Your Stay | Five Clover Hotel Monastery Road",
+        title: "Book Your Stay | Five Clover Hotel Abijo",
         description:
-          "Book your luxurious stay at Five Clover Hotel Monastery Road. Best rates guaranteed for our premium accommodations in Lagos.",
+          "Book your luxurious stay at Five Clover Hotel Abijo. Best rates guaranteed for our premium accommodations in Lagos.",
       },
     };
 
@@ -260,23 +260,25 @@ export default function RootLayout() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Hotel",
-            name: "Five Clover Hotel Monastery Road",
+            name: "Five Clover Hotel Abijo",
             description:
-              "Experience luxury and comfort at Five Clover Hotel Monastery Road. Book your stay at our premium hotel at Monastery Road, Sangotedo, Lagos, Nigeria.",
-            image: "https://fiveclovermonastery.fivecloverhotels.com/five%20clover%20logo.webp",
-            url: "https://fiveclovermonastery.fivecloverhotels.com",
+              "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
+            image:
+              "https://fivecloverabijo.fivecloverhotels.com/five%20clover%20logo.webp",
+            url: "https://fivecloverabijo.fivecloverhotels.com",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "10, Monastery Road, by Novare Mall/ShopRite, Sangotedo, Lagos",
-              addressLocality: "Monastery Road",
+              streetAddress:
+                "Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos",
+              addressLocality: "Abijo GRA",
               addressRegion: "Lagos",
               postalCode: "100211",
               addressCountry: "NG",
             },
             geo: {
               "@type": "GeoCoordinates",
-              latitude: 6.471022,
-              longitude: 3.635581,
+              latitude: 6.460612571256751,
+              longitude: 3.6746963994906077,
             },
             priceRange: "₦30,000 - ₦150,000",
             starRating: {
@@ -284,8 +286,8 @@ export default function RootLayout() {
               ratingValue: "4.5",
               bestRating: "5",
             },
-            telephone: "+234 812 345 6789",
-            email: "info@fivecloverhotel.com",
+            telephone: "+2349159477805",
+            email: "info@fivecloverhotelabijo.com",
             sameAs: [
               "https://www.facebook.com/fivecloverhotel",
               "https://www.instagram.com/fivecloverhotel",

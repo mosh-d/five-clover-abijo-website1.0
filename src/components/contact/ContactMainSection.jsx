@@ -19,9 +19,9 @@ export default function ContactMainSection() {
       >
         <h1 className="text-6xl font-bold">Get In Touch</h1>
         <p className="text-2xl font-semibold">
-          Have any questions or need assistance? The team at Five Clover,
-          Monastery Road is always ready to ensure your stay is flawless. Don't
-          hesitate to reach out—we’re here to help with anything you need.
+          Have any questions or need assistance? The team at Five Clover, Abijo
+          is always ready to ensure your stay is flawless. Don't hesitate to
+          reach out—we’re here to help with anything you need.
         </p>
       </div>
       <div
@@ -47,10 +47,10 @@ export default function ContactMainSection() {
           >
             <RiPhoneLine size="3rem" />
             <a
-              href="tel:+2349075105702"
+              href="tel:+2349159477805"
               className="border-b border-[color:var(--text-color)]/30 text-xl"
             >
-              +234 907 510 5702
+              +234 915 947 7805
             </a>
           </div>
           <div
@@ -59,10 +59,10 @@ export default function ContactMainSection() {
           >
             <RiMailLine size="3rem" />
             <a
-              href="mailto:info@fivecloverhotelmonastery.com"
+              href="mailto:info@fivecloverhotelabijo.com"
               className="border-b border-[color:var(--text-color)]/30 text-xl"
             >
-              info@fivecloverhotelmonastery.com
+              info@fivecloverhotelabijo.com
             </a>
           </div>
           <div

@@ -1,4 +1,4 @@
-# Five Clover Hotel Monastery Road - robots.txt
+# Five Clover Hotel Abijo - robots.txt
 User-agent: *
 Allow: /
 Disallow: /admin/
@@ -6,7 +6,7 @@ Disallow: /api/
 Disallow: /*?*
 
 # Sitemap location
-Sitemap: https://fiveclovermonastery.fivecloverhotels.com/sitemap.xml
+Sitemap: https://fivecloverabijo.fivecloverhotels.com/sitemap.xml
 
 Crawl-delay: 10
 

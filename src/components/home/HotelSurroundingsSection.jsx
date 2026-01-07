@@ -11,76 +11,76 @@ import beaches from "../../assets/hotel-surroundings/beaches.webp";
 
 const TOP_ATTRACTIONS = [
   {
-    title: "Giwa Gardens Water Park",
-    distance: "1 km",
-  },
-  {
-    title: "Mater Ecclesiae Monastery",
-    distance: "500 m",
-  },
-  {
     title: "Lufasi Nature Park",
+    distance: "2 km",
+  },
+  {
+    title: "Novare Lekki Mall",
     distance: "3 km",
   },
   {
-    title: "Lakowe Lakes Golf & Country Estate",
-    distance: "12 km",
+    title: "Caleb British International School",
+    distance: "1.5 km",
   },
   {
-    title: "Skymall Cinema",
-    distance: "2 km",
+    title: "Corona School Abijo",
+    distance: "1 km",
+  },
+  {
+    title: "Nike Art Gallery (Lekki)",
+    distance: "8 km",
   },
 ];
 
 const SUPERMARKETS = [
   {
-    title: "Novare Mall (Shoprite)",
-    distance: "800 m",
+    title: "Shoprite (Novare Lekki Mall)",
+    distance: "3 km",
   },
   {
-    title: "Blenco Supermarket",
+    title: "Renovo Mall",
+    distance: "3.5 km",
+  },
+  {
+    title: "The Lennox",
     distance: "2 km",
   },
   {
-    title: "Sky Mall",
-    distance: "2 km",
-  },
-  {
-    title: "Ebeano Supermarket (Chevron)",
-    distance: "10 km",
+    title: "Squire Grill",
+    distance: "1.5 km",
   },
 ];
 
 const TRANSPORTATION = [
   {
     title: "Murtala Muhammed Airport (LOS)",
-    distance: "45 km",
+    distance: "40 km",
   },
   {
-    title: "GIG Motors (Ajah Terminal)",
-    distance: "5 km",
+    title: "Rainoil Filling Station",
+    distance: "200 m",
   },
   {
-    title: "Peace Mass Transit (Ajah)",
-    distance: "5 km",
+    title: "Lekki-Epe Expressway",
+    distance: "500 m",
   },
 ];
 
 const BEACHES = [
   {
-    title: "Santa Cruz Beach",
-    distance: "5 km",
+    title: "Eleko Beach",
+    distance: "12 km",
   },
   {
     title: "Atican Beach",
-    distance: "6 km",
+    distance: "10 km",
   },
   {
-    title: "Barracuda Beach",
-    distance: "6 km",
+    title: "La Campagne Tropicana Beach",
+    distance: "14 km",
   },
   {
-    title: "Eleko Beach",
+    title: "Ibeju-Lekki Beaches",
     distance: "15 km",
   },
 ];

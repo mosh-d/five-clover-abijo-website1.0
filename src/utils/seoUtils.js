@@ -2,11 +2,11 @@ export const generateHotelSchema = (hotelData = {}) => {
   const defaultData = {
     "@context": "https://schema.org",
     "@type": "Hotel",
-    name: "Five Clover Hotel Monastery Road",
+    name: "Five Clover Hotel Abijo",
     description:
-      "Luxury hotel accommodation at Monastery Road, Sangotedo, Lagos. Experience comfort and excellent service at Five Clover Hotel.",
-    url: "https://fiveclovermonastery.fivecloverhotels.com",
-    logo: "https://fiveclovermonastery.fivecloverhotels.com/five%20clover%20logo.webp",
+      "Luxury hotel accommodation at Abijo GRA, Lekki-Epe Expressway, Lagos. Experience comfort and excellent service at Five Clover Hotel.",
+    url: "https://fivecloverabijo.fivecloverhotels.com",
+    logo: "https://fivecloverabijo.fivecloverhotels.com/five%20clover%20logo.webp",
     priceRange: "$$",
     starRating: {
       "@type": "Rating",
@@ -16,18 +16,18 @@ export const generateHotelSchema = (hotelData = {}) => {
     address: {
       "@type": "PostalAddress",
       streetAddress:
-        "10, Monastery Road, by Novare Mall/ShopRite, Sangotedo, Lagos",
+        "Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos",
       addressLocality: "Lagos",
       postalCode: "100001",
       addressCountry: "NG",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "6.471022",
-      longitude: "3.635581",
+      latitude: "6.460612571256751",
+      longitude: "3.6746963994906077",
     },
-    telephone: "+2349075105702",
-    email: "info@fivecloverhotelmonastery.com",
+    telephone: "+2349159477805",
+    email: "info@fivecloverhotelabijo.com",
     sameAs: [
       "https://www.facebook.com/fivecloverhotel",
       "https://www.instagram.com/fivecloverhotel",
@@ -61,13 +61,13 @@ export const generateBreadcrumbSchema = (items = []) => {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://fiveclovermonastery.fivecloverhotels.com",
+      item: "https://fivecloverabijo.fivecloverhotels.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rooms",
-      item: "https://fiveclovermonastery.fivecloverhotels.com/rooms",
+      item: "https://fivecloverabijo.fivecloverhotels.com/rooms",
     },
   ];
 

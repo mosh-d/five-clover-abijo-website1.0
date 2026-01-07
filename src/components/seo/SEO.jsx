@@ -1,16 +1,18 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 
 const SEO = ({
-  title = 'Five Clover Hotel Monastery Road | Luxury Accommodation in Lagos',
-  description = 'Experience luxury and comfort at Five Clover Hotel Monastery Road. Book your stay at our premium hotel at Monastery Road, Sangotedo, Lagos, Nigeria.',
-  keywords = 'hotel, lagos, accommodation, five clover, monastery road, luxury hotel, nigeria, business hotel, vacation, sangotedo',
-  image = '/five clover logo.webp',
-  url = typeof window !== 'undefined' ? window.location.href : 'https://fiveclovermonastery.fivecloverhotels.com',
-  type = 'website',
+  title = "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
+  description = "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
+  keywords = "hotel, lagos, accommodation, five clover, abijo, abijo gra, luxury hotel, nigeria, business hotel, vacation, lekki, epe expressway",
+  image = "/five clover logo.webp",
+  url = typeof window !== "undefined"
+    ? window.location.href
+    : "https://fivecloverabijo.fivecloverhotels.com",
+  type = "website",
 }) => {
-  const siteName = 'Five Clover Hotel Monastery Road';
-  const siteUrl = 'https://fiveclovermonastery.fivecloverhotels.com';
-  const twitterHandle = '@fivecloverhotel';
+  const siteName = "Five Clover Hotel Abijo";
+  const siteUrl = "https://fivecloverabijo.fivecloverhotels.com";
+  const twitterHandle = "@fivecloverhotel";
 
   return (
     <Helmet>

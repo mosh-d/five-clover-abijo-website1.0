@@ -12,8 +12,8 @@ export default function WelcomeSection() {
         className="w-full h-[400px] max-sm:h-[200px] overflow-hidden"
       >
         <iframe
-          title="Google Map - 10, Monastery Road, by Novare Mall/ShopRite, Sangotedo, Lagos"
-          src="https://www.google.com/maps?q=6.471022,3.635581&z=15&output=embed"
+          title="Google Map - Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos"
+          src="https://www.google.com/maps?q=6.460612571256751,3.6746963994906077&z=15&output=embed"
           width="100%"
           height="100%"
           style={{
@@ -29,11 +29,11 @@ export default function WelcomeSection() {
 
       <div className="flex max-sm:flex-col gap-[2rem]">
         <p className="font-secondary text-3xl mx-[1rem] font-bold">
-          10, Monastery Road, by Novare Mall/ShopRite, Sangotedo, Lagos
+          Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos
         </p>
         <a
           data-component="Map link"
-          href="https://maps.google.com/?q=10+Monastery+Road,+by+Novare+Mall/ShopRite,+Sangotedo,+Lagos,+Nigeria"
+          href="https://maps.google.com/?q=Abijo+GRA,+behind+Rainoil+Filling+Station,+Lekki-Epe+Expressway,+Lagos,+Nigeria"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 w-fit max-sm:w-full"
