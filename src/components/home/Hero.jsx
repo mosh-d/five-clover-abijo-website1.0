@@ -6,7 +6,7 @@ import Button from "../shared/Button";
 import ButtonInput from "../shared/ButtonInput";
 import Logo from "../shared/Logo";
 import heroImg from "../../assets/HERO.jpg";
-import heroVideo from "../../assets/HERO-VIDEO.mp4";
+// import heroVideo from "../../assets/HERO-VIDEO.mp4";
 
 // Define the context type (optional, for TypeScript; can omit if not using TS)
 const useSharedContext = () => {
@@ -99,7 +99,8 @@ export default function HeroSection() {
           playsInline
           onLoadedData={() => setVideoLoaded(true)}
         >
-          <source src={heroVideo} type="video/mp4" />
+          {/* commented out because video was not ready */}
+          {/* <source src={heroVideo} type="video/mp4" /> */}
         </video>
 
         {/* Dark overlay for video */}
