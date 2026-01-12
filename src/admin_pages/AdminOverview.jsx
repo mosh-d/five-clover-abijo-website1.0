@@ -51,6 +51,8 @@ export default function AdminOverviewPage() {
 
   useEffect(() => {
     loadRoomData();
+    const interval = setInterval(() => loadRoomData(), 30000);
+    return () => clearInterval(interval);
   }, [roomType]);
 
   const validateInput = (value) => {

@@ -181,6 +181,8 @@ export default function AdminBookingsPage() {
 
   useEffect(() => {
     fetchBookings();
+    const interval = setInterval(() => fetchBookings(), 30000);
+    return () => clearInterval(interval);
   }, []);
 
   const formatDate = (dateString) => {
