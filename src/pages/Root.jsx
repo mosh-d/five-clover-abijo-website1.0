@@ -7,6 +7,7 @@ import axios from "axios";
 import { generateHotelSchema } from "../utils/seoUtils";
 import SEO from "../components/seo/SEO";
 import SafeHelmet from "../components/seo/SafeHelmet";
+import SchemaMarkup from "../components/shared/SchemaMarkup";
 
 const API_BASE_URL = "https://five-clover-shared-backend.onrender.com";
 
@@ -261,46 +262,8 @@ export default function RootLayout() {
         <meta property="og:url" content={metadata.url} />
         <meta property="og:type" content={metadata.type} />
         <meta property="og:image" content={metadata.image} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Hotel",
-            name: "Five Clover Hotel Abijo",
-            description:
-              "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
-            image:
-              "https://fivecloverabijo.fivecloverhotels.com/five%20clover%20logo.webp",
-            url: "https://fivecloverabijo.fivecloverhotels.com",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress:
-                "Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos",
-              addressLocality: "Abijo GRA",
-              addressRegion: "Lagos",
-              postalCode: "100211",
-              addressCountry: "NG",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: 6.460612571256751,
-              longitude: 3.6746963994906077,
-            },
-            priceRange: "₦30,000 - ₦150,000",
-            starRating: {
-              "@type": "Rating",
-              ratingValue: "4.5",
-              bestRating: "5",
-            },
-            telephone: "+2349159477805",
-            email: "info@fivecloverhotelabijo.com",
-            sameAs: [
-              "https://www.facebook.com/fivecloverhotel",
-              "https://www.instagram.com/fivecloverhotel",
-              "https://twitter.com/fivecloverhotel",
-            ],
-          })}
-        </script>
       </SafeHelmet>
+      <SchemaMarkup branchId={branchId} />
       <header>{!isHome && <MainNavBar />}</header>
       <main>
         <Outlet context={contextValue} />
