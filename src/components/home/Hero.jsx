@@ -6,6 +6,7 @@ import Button from "../shared/Button";
 import ButtonInput from "../shared/ButtonInput";
 import Logo from "../shared/Logo";
 import heroImg from "../../assets/HERO.jpg";
+import mobileHeroImg from "../../assets/MOBILE-HERO.jpg";
 // import heroVideo from "../../assets/HERO-VIDEO.mp4";
 
 // Define the context type (optional, for TypeScript; can omit if not using TS)
@@ -13,7 +14,7 @@ const useSharedContext = () => {
   const context = useOutletContext();
   if (!context) {
     throw new Error(
-      "Component must be used within a layout providing shared context"
+      "Component must be used within a layout providing shared context",
     );
   }
   return context;
@@ -21,7 +22,7 @@ const useSharedContext = () => {
 
 export default function HeroSection() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   const videoRef = useRef(null);
@@ -29,7 +30,7 @@ export default function HeroSection() {
   // Update mobile state on window resize
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth < 640);
     };
 
     window.addEventListener("resize", handleResize);
@@ -82,7 +83,7 @@ export default function HeroSection() {
         className="relative bg-no-repeat bg-cover bg-center h-screen min-h-[80rem]"
         style={{
           backgroundImage: !videoLoaded
-            ? `linear-gradient(to bottom, hsla(38, 50%, 10%, .9), hsla(38, 50%, 10%, .9)), url(${heroImg})`
+            ? `linear-gradient(to bottom, hsla(38, 50%, 10%, .9), hsla(38, 50%, 10%, .9)), url(${isMobile ? mobileHeroImg : heroImg})`
             : "none",
           backgroundBlendMode: !videoLoaded ? "multiply" : "normal",
         }}
