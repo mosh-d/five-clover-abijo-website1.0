@@ -145,7 +145,9 @@ export default function AvailableRoomsSection() {
   const [selectedRooms, setSelectedRooms] = useState({});
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [currentGalleryImages, setCurrentGalleryImages] = useState([]);
-  const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < 640 : false);
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== "undefined" ? window.innerWidth < 640 : false,
+  );
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 640);
