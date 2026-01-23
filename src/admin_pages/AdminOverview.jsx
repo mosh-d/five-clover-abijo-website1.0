@@ -16,6 +16,7 @@ const MAINTENANCE_MODE = false; // ← Change this to true/false
 
 const ROOM_TYPE_MAP = {
   budget: 3,
+  executive: 47,
   diplomatic: 4,
 };
 
@@ -155,6 +156,18 @@ export default function AdminOverviewPage() {
               onClick={() => setRoomType("budget")}
             >
               BUDGET
+            </li>
+          )}
+          {roomType === "executive" ? (
+            <li className="bg-[color:var(--emphasis)] text-[color:var(--white)] px-2 py-1 cursor-pointer">
+              EXECUTIVE
+            </li>
+          ) : (
+            <li
+              className="border-b-[1px] border-[color:var(--emphasis)] cursor-pointer"
+              onClick={() => setRoomType("executive")}
+            >
+              EXECUTIVE
             </li>
           )}
           {roomType === "diplomatic" ? (
