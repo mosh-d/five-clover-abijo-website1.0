@@ -16,7 +16,7 @@ const TOP_ATTRACTIONS = [
   },
   {
     title: "Novare Lekki Mall",
-    distance: "3 km",
+    distance: "8 km",
   },
   {
     title: "Caleb British International School",
@@ -27,15 +27,15 @@ const TOP_ATTRACTIONS = [
     distance: "1 km",
   },
   {
-    title: "Nike Art Gallery (Lekki)",
-    distance: "8 km",
+    title: "Abijo Golf Resort",
+    distance: "3 km",
   },
 ];
 
 const SUPERMARKETS = [
   {
     title: "Shoprite (Novare Lekki Mall)",
-    distance: "3 km",
+    distance: "8 km",
   },
   {
     title: "Renovo Mall",
@@ -46,8 +46,8 @@ const SUPERMARKETS = [
     distance: "2 km",
   },
   {
-    title: "Squire Grill",
-    distance: "1.5 km",
+    title: "Abijo Market",
+    distance: "500m",
   },
 ];
 
@@ -57,8 +57,8 @@ const TRANSPORTATION = [
     distance: "40 km",
   },
   {
-    title: "Rainoil Filling Station",
-    distance: "200 m",
+    title: "Abijo Bus Terminal",
+    distance: "1 km",
   },
   {
     title: "Lekki-Epe Expressway",
@@ -78,10 +78,6 @@ const BEACHES = [
   {
     title: "La Campagne Tropicana Beach",
     distance: "14 km",
-  },
-  {
-    title: "Ibeju-Lekki Beaches",
-    distance: "15 km",
   },
 ];
 
