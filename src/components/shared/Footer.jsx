@@ -87,10 +87,10 @@ export default function Footer() {
             >
               <RiPhoneLine size="3rem" />
               <a
-                href="tel:+2349159477805"
+                href="tel:+2349042975483"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                +234 915 947 7805
+                +234 904 297 5483
               </a>
             </div>
             <div
@@ -99,12 +99,12 @@ export default function Footer() {
             >
               <RiWhatsappLine size="3rem" />
               <a
-                href="https://wa.me/2349159477805"
+                href="https://wa.me/2349042975483"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                +234 915 947 7805
+                +234 904 297 5483
               </a>
             </div>
             <div
@@ -113,10 +113,10 @@ export default function Footer() {
             >
               <RiMailLine size="3rem" />
               <a
-                href="mailto:info@fivecloverhotelabijo.com"
+                href="mailto:fivecloverinnabijo@gmail.com"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                info@fivecloverhotelabijo.com
+                fivecloverinnabijo@gmail.com
               </a>
             </div>
           </div>
