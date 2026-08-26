@@ -5,8 +5,8 @@ export const generateHotelSchema = (hotelData = {}) => {
     name: "Five Clover Hotel Abijo",
     description:
       "Luxury hotel accommodation at Abijo GRA, Lekki-Epe Expressway, Lagos. Experience comfort and excellent service at Five Clover Hotel.",
-    url: "https://fivecloverabijo.fivecloverhotels.com",
-    logo: "https://fivecloverabijo.fivecloverhotels.com/five%20clover%20logo.webp",
+    url: "https://abijo.fivecloverhotels.com",
+    logo: "https://abijo.fivecloverhotels.com/five%20clover%20logo.webp",
     priceRange: "$$",
     starRating: {
       "@type": "Rating",
@@ -61,13 +61,13 @@ export const generateBreadcrumbSchema = (items = []) => {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://fivecloverabijo.fivecloverhotels.com",
+      item: "https://abijo.fivecloverhotels.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Rooms",
-      item: "https://fivecloverabijo.fivecloverhotels.com/rooms",
+      item: "https://abijo.fivecloverhotels.com/rooms",
     },
   ];
 

@@ -228,7 +228,7 @@ export default function RootLayout() {
 
   // Get current page metadata
   const getPageMetadata = () => {
-    const baseUrl = "https://fivecloverabijo.fivecloverhotels.com";
+    const baseUrl = "https://abijo.fivecloverhotels.com";
     const defaultMetadata = {
       title: "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
       description:
@@ -236,6 +236,7 @@ export default function RootLayout() {
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/five clover logo.webp",
+      robots: "index, follow",
     };
 
     const pageMetadata = {
@@ -249,25 +250,16 @@ export default function RootLayout() {
         description:
           "Discover the story behind Five Clover Hotel Abijo and our commitment to providing exceptional hospitality in Lagos.",
       },
-      "/rooms": {
-        title: "Our Rooms | Five Clover Hotel Abijo",
-        description:
-          "Explore our luxurious rooms and suites at Five Clover Hotel Abijo, designed for your comfort and relaxation.",
-      },
-      "/gallery": {
-        title: "Photo Gallery | Five Clover Hotel Abijo",
-        description:
-          "View our photo gallery showcasing the luxurious facilities and comfortable accommodations at Five Clover Hotel Abijo.",
-      },
       "/contact": {
         title: "Contact Us | Five Clover Hotel Abijo",
         description:
           "Get in touch with Five Clover Hotel Abijo. Our friendly staff is ready to assist with your booking and inquiries.",
       },
-      "/booking": {
-        title: "Book Your Stay | Five Clover Hotel Abijo",
+      "/booking-confirmation": {
+        title: "Booking Confirmation | Five Clover Hotel Abijo",
         description:
-          "Book your luxurious stay at Five Clover Hotel Abijo. Best rates guaranteed for our premium accommodations in Lagos.",
+          "Your booking confirmation at Five Clover Hotel Abijo.",
+        robots: "noindex, follow",
       },
     };
 
@@ -287,6 +279,8 @@ export default function RootLayout() {
         <meta property="og:url" content={metadata.url} />
         <meta property="og:type" content={metadata.type} />
         <meta property="og:image" content={metadata.image} />
+        <meta name="robots" content={metadata.robots} />
+        <link rel="canonical" href={metadata.url} />
       </SafeHelmet>
       <SchemaMarkup branchId={branchId} />
       <header>{!isHome && <MainNavBar />}</header>
