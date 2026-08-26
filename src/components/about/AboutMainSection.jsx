@@ -16,13 +16,7 @@ export default function AboutMainSection() {
             Seamless Comfort and Hospitality
           </h1>
           <p className="text-3xl">
-            Five Clover, Abijo seamlessly blends modern comfort with the warmth
-            of West African hospitality, offering a unique and inviting
-            experience for our esteemed guests. Located in the upscale Abijo GRA
-            area along the Lekki-Epe Expressway, Lagos, our hotel offers a
-            balanced mix of relaxation, workspaces, and proximity to popular
-            destinations, making it a top choice for travelers seeking comfort
-            and convenience in Abijo.
+            Five Clover Abijo brings modern comfort together with the warmth that defines West African hospitality, set in the upscale Abijo GRA neighborhood along the Lekki-Epe Expressway. It's a natural fit for travelers who want workspace, relaxation, and easy access to the surrounding area all in one place.
           </p>
         </div>
         <div data-component="Block2" className="flex flex-col w-full">
@@ -41,19 +35,11 @@ export default function AboutMainSection() {
               data-component="Block2Text"
               className="flex flex-col gap-[1.8rem] font-secondary bg-[color:var(--accent-2)] w-[100%] p-[12rem] max-md:p-[6rem] max-sm:p-[4rem]"
             >
-              <h1 className="text-6xl font-bold">
+              <h2 className="text-6xl font-bold">
                 Your Ideal Retreat for Comfort and Convenience
-              </h1>
+              </h2>
               <p className="text-3xl">
-                Welcome to a new standard of hospitality in Abijo GRA. The Five
-                Clover Inn is a modern hotel located in the peaceful Abijo GRA
-                area with few minutes' drive from the Lekki-Epe Expressway. It
-                offers a perfect environment for both business and leisure
-                travelers by combining comfort, functionality, and elegance. The
-                inn features a variety of well-appointed rooms designed for
-                relaxation, including king-sized beds with luxurious bedding, a
-                coffee station with complimentary packages, air conditioning,
-                free Wi-Fi, flat-screen TVs, and ensuite bathrooms.
+                Just minutes from the Lekki-Epe Expressway, Five Clover Inn sets a new bar for hospitality in Abijo GRA - a genuinely restful stay for guests traveling on business or for leisure. Rooms combine comfort with function: king-sized beds and premium bedding, a complimentary coffee station, air conditioning, free Wi-Fi, flat-screen TVs, and private ensuite bathrooms.
               </p>
             </div>
           </div>
@@ -63,16 +49,11 @@ export default function AboutMainSection() {
               data-component="Block2Text"
               className="flex flex-col gap-[1.8rem] font-secondary bg-[color:var(--accent-2)] w-[100%] p-[12rem] max-md:p-[6rem] max-sm:p-[4rem]"
             >
-              <h1 className="text-6xl font-bold">
+              <h2 className="text-6xl font-bold">
                 Experience Tranquil Stays with Unmatched Security
-              </h1>
+              </h2>
               <p className="text-3xl">
-                Five Clover is a modern hotel located in the peaceful Abijo GRA
-                area. We ensure a secure environment with advanced surveillance
-                systems and a dedicated team, providing peace of mind throughout
-                your stay. We offer more than just a place to stay; we provide a
-                luxurious experience marked by comfort, security, and
-                personalized service.
+                Five Clover Abijo keeps security front and center, with advanced surveillance systems and a dedicated team watching over the property day and night. It's a stay built around more than just a room - comfort, safety, and genuinely personal service.
               </p>
             </div>
             <div
@@ -92,18 +73,15 @@ export default function AboutMainSection() {
           className="bg-[color:var(--text-color)] p-[6rem] flex max-sm:flex-col gap-[6rem] text-[var(--white)] font-secondary"
         >
           <div className="flex flex-col gap-[1.8rem]">
-            <h1 className="text-6xl font-secondary font-bold">Our Vision</h1>
+            <h2 className="text-6xl font-secondary font-bold">Our Vision</h2>
             <p className="text-3xl">
-              To be an organically developed global hotel management company
-              that excels in its core components of place, service,
-              people and system.
+              We're building toward something larger than any one hotel - a hospitality group grown organically, excelling in place, service, people, and system.
             </p>
           </div>
           <div className="flex flex-col gap-[1.8rem]">
-            <h1 className="text-6xl font-secondary font-bold">Our Mission</h1>
+            <h2 className="text-6xl font-secondary font-bold">Our Mission</h2>
             <p className="text-3xl">
-              Our mission is to be the most hospitable company in the world by
-              creating world-class experiences for guests.
+              At Five Clover Abijo, that vision means one thing for guests: a world-class experience, every time.
             </p>
           </div>
         </div>

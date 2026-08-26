@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 
 const SEO = ({
   title = "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
-  description = "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
+  description = "Five Clover Hotel Abijo offers upscale accommodation in Abijo GRA, just off the Lekki-Epe Expressway.",
   keywords = "hotel, lagos, accommodation, five clover, abijo, abijo gra, luxury hotel, nigeria, business hotel, vacation, lekki, epe expressway",
   image = 'https://abijo.fivecloverhotels.com/five%20clover%20logo.webp',
   url = typeof window !== "undefined"

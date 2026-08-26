@@ -232,7 +232,7 @@ export default function RootLayout() {
     const defaultMetadata = {
       title: "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
       description:
-        "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
+        "Five Clover Hotel Abijo offers upscale accommodation in Abijo GRA, just off the Lekki-Epe Expressway.",
       url: `${baseUrl}${location.pathname}`,
       type: "website",
       image: "/five clover logo.webp",
@@ -243,7 +243,7 @@ export default function RootLayout() {
       "/": {
         title: "Five Clover Hotel Abijo | Luxury Accommodation in Lagos",
         description:
-          "Experience luxury and comfort at Five Clover Hotel Abijo. Book your stay at our premium hotel at Abijo GRA, Lekki-Epe Expressway, Lagos, Nigeria.",
+          "Five Clover Hotel Abijo offers upscale accommodation in Abijo GRA, just off the Lekki-Epe Expressway.",
       },
       "/about": {
         title: "About Us | Five Clover Hotel Abijo",
@@ -261,6 +261,17 @@ export default function RootLayout() {
           "Your booking confirmation at Five Clover Hotel Abijo.",
         robots: "noindex, follow",
       },
+      "/privacy-policy": {
+        title: "Privacy Policy | Five Clover Hotel Abijo",
+        description:
+          "Read Five Clover Hotel Abijo's privacy policy to learn how we collect, use, and protect your personal information.",
+      },
+      "/terms-of-service": {
+        title: "Terms and Conditions | Five Clover Hotel Abijo",
+        description:
+          "Read the terms and conditions that apply to bookings and website use at Five Clover Hotel Abijo.",
+      },
+
     };
 
     return { ...defaultMetadata, ...(pageMetadata[location.pathname] || {}) };
