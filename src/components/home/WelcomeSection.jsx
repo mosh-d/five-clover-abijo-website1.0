@@ -1,6 +1,48 @@
+import { useEffect, useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
+import { fetchBranchContact } from "../../utils/room-data";
+
+// What this section shows until the server answers, and if it never does.
+// The branches table is the source of truth (owner, 2026-09-17); this copy
+// is only here so a slow or failed request leaves Locate Us reading
+// correctly rather than empty.
+const FALLBACK_CONTACT = {
+  name: "Five Clover Abijo",
+  address:
+    "Five Clover Inn, Abijo GRA, Abijo GRA, Lekki - Epe Expy, behind Rain Oil Filling Station, Lekki 105101, Lagos",
+  maps_url: null,
+};
+
 export default function WelcomeSection() {
+  const [contact, setContact] = useState(FALLBACK_CONTACT);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    fetchBranchContact()
+      .then((data) => {
+        if (!cancelled && data?.address) setContact(data);
+      })
+      .catch((error) => {
+        // Not worth showing a guest: the fallback above already reads
+        // correctly, and nothing else on the page depends on this.
+        console.error("Error fetching branch contact:", error);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // The address on file is the hotel's full Google Maps address, its own
+  // name included, so it is searched as it stands and lands on the hotel's
+  // listing rather than on the street.
+  const mapQuery = encodeURIComponent(contact.address || "");
+  const mapsLink =
+    contact.maps_url ||
+    `https://www.google.com/maps/search/?api=1&query=${mapQuery}`;
+
   return (
     <div
       data-component="Welcome Component"
@@ -12,8 +54,8 @@ export default function WelcomeSection() {
         className="w-full h-[400px] max-sm:h-[200px] overflow-hidden"
       >
         <iframe
-          title="Google Map - Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos"
-          src="https://www.google.com/maps?q=6.460612571256751,3.6746963994906077&z=15&output=embed"
+          title={`Google Map - ${contact.address}`}
+          src={`https://maps.google.com/maps?q=${mapQuery}&output=embed`}
           width="100%"
           height="100%"
           style={{
@@ -29,11 +71,11 @@ export default function WelcomeSection() {
 
       <div className="flex max-sm:flex-col gap-[2rem]">
         <p className="font-secondary text-3xl mx-[1rem] font-bold">
-          Abijo GRA, behind Rainoil Filling Station, Lekki-Epe Expressway, Lagos
+          {contact.address}
         </p>
         <a
           data-component="Map link"
-          href="https://maps.google.com/?q=Abijo+GRA,+behind+Rainoil+Filling+Station,+Lekki-Epe+Expressway,+Lagos,+Nigeria"
+          href={mapsLink}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 w-fit max-sm:w-full"
