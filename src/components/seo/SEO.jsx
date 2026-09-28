@@ -12,7 +12,6 @@ const SEO = ({
   noindex = false,
 }) => {
   const siteName = "Five Clover Hotel Abijo";
-  const siteUrl = "https://abijo.fivecloverhotels.com";
   const twitterHandle = "@fivecloverhotel";
 
   return (
