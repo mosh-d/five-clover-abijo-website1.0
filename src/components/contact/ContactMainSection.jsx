@@ -45,10 +45,10 @@ export default function ContactMainSection() {
           >
             <RiPhoneLine size="3rem" />
             <a
-              href="tel:+2349159477805"
+              href="tel:+2349042975483"
               className="border-b border-[color:var(--text-color)]/30 text-2xl"
             >
-              +234 915 947 7805
+              +234 904 297 5483
             </a>
           </RevealItem>
           <RevealItem x={-24} y={0}
