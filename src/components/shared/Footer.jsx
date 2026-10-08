@@ -100,12 +100,12 @@ export default function Footer() {
             >
               <RiWhatsappLine size="3rem" />
               <a
-                href="https://wa.me/2349042975483"
+                href="https://wa.me/2349159477805"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-b border-[color:var(--text-color)]/30 text-xl"
               >
-                +234 904 297 5483
+                +234 915 947 7805
               </a>
             </div>
             <div
